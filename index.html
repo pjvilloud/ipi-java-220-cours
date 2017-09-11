@@ -1,0 +1,169 @@
+<!doctype html>
+
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>IPI - Cours de Java - module 220</title>
+    
+    <meta name="description" content="" />
+    <meta name="author" content="Pierre-Julien VILLOUD" />
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/idea.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+    
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="my-navbar">
+  <a class="navbar-brand" href="index.html">
+    <img src="img/ipi.jpg" width="30" height="30" alt=""> Cours Java 220
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="nav nav-pills mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownIntroduction" href="#introduction" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Introduction
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownIntroduction">
+          <a class="dropdown-item" href="#introduction-intro">Introduction à la POO</a>
+          <a class="dropdown-item" href="#introduction-vocabulaire">Vocabulaire de la POO</a>
+          <a class="dropdown-item" href="#introduction-objet">La notion d'objet et de classes</a>
+          <a class="dropdown-item" href="#introduction-relations">Relations entre classe</a>
+          <a class="dropdown-item" href="#introduction-comparaison">Comparaison avec la programmation procédurale</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownStandard" href="#standard" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Classes standards
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownStandard">
+          <a class="dropdown-item" href="#standard-string">String</a>
+          <a class="dropdown-item" href="#standard-math">Math</a>
+          <a class="dropdown-item" href="#standard-collections">Collections</a>
+          <a class="dropdown-item" href="#standard-enveloppes">Classes enveloppes</a>
+          <a class="dropdown-item" href="#standard-autres">Autres</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownCreerClasses" href="#creer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Créer ses classes
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownCreerClasses">
+          <a class="dropdown-item" href="#creer-attributs">Attributs</a>
+          <a class="dropdown-item" href="#creer-methodes">Méthodes</a>
+          <a class="dropdown-item" href="#creer-constructeurs">Constructeurs</a>
+          <a class="dropdown-item" href="#creer-encapsulation">Encapsulation</a>
+          <a class="dropdown-item" href="#creer-packages">La notion de package</a>
+          <a class="dropdown-item" href="#creer-visibilite">Visibilité</a>
+          <a class="dropdown-item" href="#creer-aggregation">Aggrégation</a>
+          <a class="dropdown-item" href="#creer-pratiques">Bonnes pratiques</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownHeritage" href="#heritage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Héritage
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownHeritage">
+          <a class="dropdown-item" href="#heritage-object">La classe Object</a>
+          <a class="dropdown-item" href="#heritage-hierarchie">Hiérarchie</a>
+          <a class="dropdown-item" href="#heritage-polymorphisme">Polymorphisme</a>
+          <a class="dropdown-item" href="#heritage-surcharge">Surcharge</a>
+          <a class="dropdown-item" href="#heritage-abstraites">Classes abstraites</a>
+          <a class="dropdown-item" href="#heritage-pratiques">Bonnes pratiques</a>
+        </div>
+      </li>
+      <!--<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownBonus" href="#bonus" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Bonus
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownBonus">
+          <a class="dropdown-item" href="#bonus-recursivite">La récursivité</a>
+          <a class="dropdown-item" href="#bonus-maitrise">Maitriser son IDE</a>
+        </div>
+      </li> -->
+    </ul>
+    <span class="navbar-text">
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <a class="btn btn-primary" href="https://github.com/pjvilloud/ipi-java-220-ex" target="_blank"><i class="fa fa-icon fa-gamepad"></i></a>
+            &nbsp;
+            <a class="btn btn-primary" href="mailto:pjvilloud@protonmail.com"><i class="fa fa-icon fa-envelope"></i></a>
+            &nbsp;
+            <a class="btn btn-primary" href="https://github.com/pjvilloud" target="_blank"><i class="fa fa-icon fa-github"></i></a>
+            &nbsp;
+            <a class="btn btn-primary" href="https://linkedin.com/pjvilloud" target="_blank"><i class="fa fa-icon fa-linkedin"></i></a>
+        </div>
+    </span>
+  </div>
+</nav>
+<div class="progress">
+  <div id="progress" class="progress-bar" style="width: 0%;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="container-fluid" id="impress">
+
+    <div id="accueil" class="step slide" data-nb="1" data-x="0" data-y=0>
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container text-center">
+            <h1 class="display-3">Bienvenue !</h1>
+            <p class="lead">
+                <h2>Pierre-Julien VILLOUD</h2>
+                <div class="big-top-margin">
+                    <img src="img/pjvilloud.jpg" class="img-bienvenue rounded mx-auto d-block" alt="Pierre-Julien VILLOUD">
+                </div>
+                <div class="big-top-margin">
+                    <h3><i class="fa fa-icon fa-envelope-square"></i>&nbsp;<a href="mailto:pjvilloud@protonmail.com">pjvilloud@protonmail.com</a></h3>
+                    <h3><i class="fa fa-icon fa-github-square"></i>&nbsp;<a href="https://github.com/pjvilloud" target="_blank">https://github.com/pjvilloud</a></h3>
+                    <h3><i class="fa fa-icon fa-linkedin-square"></i>&nbsp;<a href="https://github.com/pjvilloud" target="_blank">https://linkedin.com/pjvilloud</a></h3>
+                </div>
+            </p>
+          </div>
+        </div>
+        
+    </div>
+
+    <div id="introduction" class="step slide" data-nb="2" data-x="0" data-y=1100>
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container-fluid text-center">
+            <h1 class="display-3">Java, une plateforme de programmation</h1>
+            <div class="container">
+                <h5>Issu du <a href="http://www.oracle.com/technetwork/java/langenv-140151.html" target="_blank">Livre blanc</a> : </h5>
+                <ul class="list-group">
+                  <li class="list-group-item">Simplicité, Orienté Objet, et Familié</li>
+                  <li class="list-group-item">Robustesse et Sécurité</li>
+                  <li class="list-group-item">Architecture neutre et Portabilité</li>
+                  <li class="list-group-item">Performances élevées</li>
+                  <li class="list-group-item">Interprété, Multithread, et Dynamique</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/impress.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/highlight.min.js"></script>
+<script src="js/script.js"></script>
+
