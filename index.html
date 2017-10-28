@@ -49,6 +49,7 @@
           <a class="dropdown-item" href="#introduction-notions">Les notions principales</a>
           <a class="dropdown-item" href="#introduction-relations">Relations entre classe</a>
           <a class="dropdown-item" href="#introduction-comparaison">Comparaison avec la programmation procédurale</a>
+          <a class="dropdown-item" href="#introduction-reference">La notion de référence</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -110,7 +111,8 @@
             &nbsp;
             <a class="btn btn-primary" href="https://github.com/pjvilloud" target="_blank"><i class="fa fa-icon fa-github"></i></a>
             &nbsp;
-            <a class="btn btn-primary" href="https://linkedin.com/pjvilloud" target="_blank"><i class="fa fa-icon fa-linkedin"></i></a>
+            <a class="btn btn-primary" href="https://linkedin.com/pjvilloud" target="_blank"><i class="fa fa-icon fa-linkedin"></i></a>&nbsp;
+            <a class="btn btn-primary" href="#" id="numSlide">1</a>
         </div>
     </span>
   </div>
@@ -132,7 +134,8 @@
                 <div class="big-top-margin">
                     <h3><i class="fa fa-icon fa-envelope-square"></i>&nbsp;<a href="mailto:pjvilloud@protonmail.com">pjvilloud@protonmail.com</a></h3>
                     <h3><i class="fa fa-icon fa-github-square"></i>&nbsp;<a href="https://github.com/pjvilloud" target="_blank">https://github.com/pjvilloud</a></h3>
-                    <h3><i class="fa fa-icon fa-linkedin-square"></i>&nbsp;<a href="https://github.com/pjvilloud" target="_blank">https://linkedin.com/pjvilloud</a></h3>
+                    <h3><i class="fa fa-icon fa-linkedin-square"></i>&nbsp;<a href="https://linkedin.com/pjvilloud" target="_blank">https://linkedin.com/pjvilloud</a></h3>
+                    <h3><i class="fa fa-icon fa-globe"></i>&nbsp;<a href="http://pjvilloud.github.io" target="_blank">http://pjvilloud.github.io</a></h3>
                 </div>
             </p>
           </div>
@@ -1559,11 +1562,14 @@ p3.setPremier(false);//Warning</span>
             
           </div>
           <div class="container small-font text-left">
-            <pre><code class="java"><span data-toggle="popover" data-offset="0" data-trigger="hover click" data-placement="right" data-html="true"
-                 data-content="Déclaration d'une interface avec le mot-clé <code>interface</code>. Il ne peut y avoir que des méthodes abstraites et des constantes">public interface Client {
+            <pre><code class="java"><span data-toggle="popover" data-offset="0" data-trigger="hover click" data-placement="left" data-html="true"
+                 data-content="Déclaration d'une interface avec le mot-clé <code>interface</code>. Il ne peut y avoir que des méthodes abstraites et des constantes">public interface Client {</span>
   public static final double PRIX_BASE = 1.0;
   public abstract double tauxTva();
-}</span>
+  <span data-toggle="popover" data-offset="0" data-trigger="hover click" data-placement="right" data-html="true" data-content="Avec Java 8, il est possible de mettre déclarer des méthodes avec des implémentations par défaut. Lorsque c'est le cas, les classes implémentant l'interfce ne sont pas obligées de définir leur propre implémentation.">public default void affichePrixBase(){
+    System.out.println("Prix de base : " + PRIX_BASE);
+  }</span>
+}
 
 <span data-toggle="popover" data-offset="0" data-trigger="hover click" data-placement="right" data-html="true"
    data-content="La classe <code>Particulier</code> <em>implémente</em> l'interface <code>Client</code>. Il est obligatoire de définir la méthode <code>tauxTva</code>">public class Particulier implements Client {
@@ -1889,5 +1895,6 @@ List&lt;Client&gt; clients = commandes.stream()
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/highlight.min.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
 <script src="js/script.js"></script>
 
