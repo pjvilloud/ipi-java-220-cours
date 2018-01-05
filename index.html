@@ -452,7 +452,7 @@ String chaineVide = new String("");</span>
                     <td>Arrondi</td>
                     <td><code>round(float ou double)</code> <i class="fa fa-icon fa-arrow-right"></i> <code>int</code> ou <code>long</code><br>
                       <code>ceil(double)</code> <i class="fa fa-icon fa-arrow-right"></i> <code>double</code><br>
-                      <code>round(double)</code> <i class="fa fa-icon fa-arrow-right"></i> <code>double</code>
+                      <code>floor(double)</code> <i class="fa fa-icon fa-arrow-right"></i> <code>double</code>
                     </td>
                     <td><pre class="no-bottom-margin"><code class="java">Math.round(4.56); //5
 Math.ceil(4.23);//5
@@ -666,7 +666,7 @@ setPrenoms.isEmpty();//false
 setPrenoms.size();//4
 <span data-toggle="popover" data-trigger="hover" data-placement="right" data-title="Suppression d'éléments"
                       data-content="Suppression d'éléments par élément"
-                      data-html="true">setPrenoms.remove("Pierre");//[ "Simon", "Jacques"])</span>
+                      data-html="true">setPrenoms.remove("Pierre");//[ "Jean", Simon", "Jacques"])</span>
 
 <span data-toggle="popover" data-trigger="hover" data-placement="right"
                       data-content="Parcours d'une ensemble"
@@ -1163,7 +1163,7 @@ public class Professionnel extends Client {
           <h1 class="display-3">Hiérarchie d'héritage et classe <code>Object</code></h1>
           <div class="container-fluid">
             <div class="alert alert-primary small-font" role="alert">
-                <i class="fa fa-icon fa-info-circle"></i>&nbsp;L'héritage n'est pas un limité à un niveau. Ainsi, dans l'exemple précédent, on peut faire hériter une autre classe de <code>Professionnel</code>. En particulier, toutes les classes (même les vôtres hérite de la superclasse cosmique <code>Object</code>. En revanche, il n'est pas possible en Java, d'hériter de deux classes différentes.
+                <i class="fa fa-icon fa-info-circle"></i>&nbsp;L'héritage n'est pas un limité à un niveau. Ainsi, dans l'exemple précédent, on peut faire hériter une autre classe de <code>Professionnel</code>. En particulier, toutes les classes (même les vôtres hérite de la superclasse cosmique <code>Object</code>). En revanche, il n'est pas possible en Java, d'hériter de deux classes différentes.
             </div>
           </div>
           <div class="row align-items-center">
@@ -1484,14 +1484,14 @@ public class CommandePlusSpeciale extends CommandeSpeciale { //Erreur de compila
 }</code></pre>
 <pre class="col-lg-6"><code class="java"><span data-toggle="popover" data-offset="0" data-trigger="hover click" data-placement="left" data-html="true" data-content="<code>T</code> et <code>U</code> sont remplacés respectivement par <code>String</code> et <code>Integer</code>. La deuxième instruction utilise l'inférence de type pour alléger la syntaxe.">Paire&lt;String, Integer&gt; p = new Paire&lt;String, Integer&gt;("Un", 1);
 Paire&lt;String, Integer&gt; p = new Paire&lt;&gt;("Un", 1);//Java 7+</span>
-popoverString s = p.getPremier();
+String s = p.getPremier();
 p.setSecond(1);
 
-<span data-toggle="popover" data-offset="-10" data-trigger="hover click" data-placement="left" data-html="true" data-content="Dans cet exemple, on n'utilise pas &lt;&gt;. C'est donc le <em>type brut</em> qui est utilisé : <code>Object, Object</code>, il en résulte un <em>warning</em> à la compilation. Cependant, comme la variable <code>p2</code> explicite clairement les types, la deuxième instruction échoue à la compilation."> Paire&lt;String, Integer&gt; p2 = new Paire("Un", 1);//Warning
+<span data-toggle="popover" data-offset="-10" data-trigger="hover click" data-placement="left" data-html="true" data-content="Dans cet exemple, on n'utilise pas &lt;&gt;. C'est donc le <em>type brut</em> qui est utilisé : <code>Object, Object</code>, il en résulte un <em>warning</em> à la compilation. Cependant, comme la variable <code>p2</code> explicite clairement les types, la deuxième instruction échoue à la compilation.">Paire&lt;String, Integer&gt; p2 = new Paire("Un", 1);//Warning
 p2.setPremier(1);//Erreur de compilation</span>
 
 <span data-toggle="popover" data-offset="55px" data-trigger="hover click" data-placement="left" data-html="true" data-content="Les deux instructions sont valides (bien que générant un <em>warning</em>), mais la deuxième instruction lèvera une exception à l'exécution puisqu'il y aura une tentative de transtypage de <code>Boolean</code> vers <code>Integer</code>">Paire&lt;String, Integer&gt; p2 = new Paire(5, false);//Warning
-Integer i = paire2p.getSecond();//ClassCastException</span>
+Integer i = p2.getSecond();//ClassCastException</span>
 
 <span data-toggle="popover" data-offset="0" data-trigger="hover click" data-placement="bottom" data-html="true" data-content="Enfin dans ce cas, c'est également le <em>type brut</em> qui est utilisé sauf qu'aucun type n'est explicite dans la déclaration. On peut donc faire tout et n'importe quoi...">Paire p3 = new Paire("Un", 1);//Warning
 p3.setPremier(false);//Warning</span>
@@ -1761,7 +1761,7 @@ new Item("Produit", 5, 12.0).afficheItem();
       </div>
     </div>
 
-    <div id="interfaces-java8" class="step slide" data-nb="39 number" data-rel-x="2000" data-y="5500">
+    <div id="interfaces-java8" class="step slide" data-nb="39" data-rel-x="2000" data-y="5500">
       <div class="jumbotron jumbotron-fluid">
         <div class="container-fluid text-center">
           <h1 class="display-3">Les lambdas</h1>
