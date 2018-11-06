@@ -48,15 +48,6 @@ $(window).on('hashchange', function(e){
     
 });
 
-$(window).on('mousewheel', function(event) {
-  if(event.deltaY < 0) {
-    imp.next();
-  } else{
-    imp.prev();
-  }
-  e.preventDefault();
-});
-
 //-------------------
 
 $("#correctGeneric").click(function(event) {

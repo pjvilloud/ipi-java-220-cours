@@ -694,16 +694,16 @@ setPrenoms.size();//4
 
 <span data-toggle="popover" data-trigger="hover" data-placement="right" data-title="Ajout d'éléments"
                       data-content="Ajout de couple clé/valeur. L'ajout d'une clé déjà existante remplace la valeur précédente (sauf utilisation de <code>putIfAbsent</code>"
-                      data-html="true">mapNumbers.put(1, "Un");//[ 1 => "Un" ]
-mapNumbers.put(3, "Trois");//[ 1 => "Un", 3 => "Trois"]
-mapNumbers.put(2, "DEUX");//[ 1 => "Un", 3 => "Trois", 2 => "DEUX" ]
-mapNumbers.put(2, "Deux");//[ 1 => "Un", 3 => "Trois", 2 => "Deux" ]
-mapNumbers.putIfAbsent(2, "AAA");//[ 1 => "Un", 3 => "Trois", 2 => "Deux" ]</span>
+                      data-html="true">mapNombres.put(1, "Un");//[ 1 => "Un" ]
+mapNombres.put(3, "Trois");//[ 1 => "Un", 3 => "Trois"]
+mapNombres.put(2, "DEUX");//[ 1 => "Un", 3 => "Trois", 2 => "DEUX" ]
+mapNombres.put(2, "Deux");//[ 1 => "Un", 3 => "Trois", 2 => "Deux" ]
+mapNombres.putIfAbsent(2, "AAA");//[ 1 => "Un", 3 => "Trois", 2 => "Deux" ]</span>
 mapNombres.isEmpty();//false
 <span data-toggle="popover" data-trigger="hover" data-placement="right" data-title="Recherche"
                       data-content="Recherche d'un élément dans la table par clé ou par valeur"
                       data-html="true">mapNombres.containsKey(2);//true
-mapNumbers.containsValue("Un");//true</span>
+mapNombres.containsValue("Un");//true</span>
 mapNombres.size();//3
 <span data-toggle="popover" data-trigger="hover" data-placement="right" data-title="Suppression d'éléments"
                       data-content="Suppression d'éléments par clé"
@@ -711,8 +711,8 @@ mapNombres.size();//3
 
 <span data-toggle="popover" data-trigger="hover" data-placement="right"
                       data-content="Parcours d'une table de hachage"
-                      data-html="true">for (Integer n : mapNumbers.keySet()){
-    System.out.println(mapNumbers.get(n));//Affiche "Un" et "Trois"
+                      data-html="true">for (Integer n : mapNombres.keySet()){
+    System.out.println(mapNombres.get(n));//Affiche "Un" et "Trois"
 }</span></code></pre>
             </div>
 
@@ -1194,7 +1194,7 @@ public class Professionnel extends Client {
     if (this == o) return true;
     if (o == null) return false;
     if (getClass() != o.getClass()) return false;
-    Client c = (c) o;
+    Client c = (Client) o;
     return numero == c.numero &&
       Double.compare(c.solde, solde) == 0 &&
       Objects.equals(adresseLivr, c.adresseLivr) &&
@@ -1271,7 +1271,7 @@ Professionnel[] pros = new Professionnel[1];
 <span data-toggle="popover" data-trigger="hover" data-placement="right" data-html="true"
           data-content="On peut stocker un <code>Client</code> ou un <code>Professionnel</code> dans un <code>Client[]</code>">clients[0] = c; clients[1] = p;</span>
 <span data-toggle="popover" data-offset="-35px" data-trigger="hover" data-placement="left" data-html="true"
-          data-content="On ne peut stocker que de objets de la classe <code>Professionnel</code> (et ses éventuelles sous-classes) dans un <code>Professionnel[]</code>">pro[0] = p;</span>
+          data-content="On ne peut stocker que de objets de la classe <code>Professionnel</code> (et ses éventuelles sous-classes) dans un <code>Professionnel[]</code>">pros[0] = p;</span>
 
 <span data-toggle="popover" data-trigger="hover" data-placement="right" data-html="true"
           data-content="Même s'il est stocké en tant que <code>Client</code> dans le tableau, l'instance se comporte bien comme un <code>Professionnel</code>">Boolean txTva = p.tauxTva() == clients[1].tauxTva();//true</span>
@@ -1309,9 +1309,6 @@ objects.get(1).tauxTva()//Erreur de compilation</span>
     ...
   }
   public void ajouterItem(String nom, int quantite){
-    ...
-  }
-  public Item ajouterItem(String nom, int quantite){
     ...
   }
 
