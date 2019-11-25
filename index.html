@@ -105,7 +105,20 @@
     </ul>
     <span class="navbar-text">
         <div class="btn-group" role="group" aria-label="Basic example">
+          <form class="form-inline my-2 my-lg-0" onsubmit="search()">
+              <div class="input-group">
+                <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Rechercher" aria-label="Rechercher">
+                <div class="input-group-append">
+                  <span class="input-group-text" id="searchNb"></span>
+                  <button class="btn btn-primary" type="submit"><i class="fa fa-icon fa-search"></i></button>
+                </div>
+              </div>
+              
+              
+            </form>&nbsp;
             <a class="btn btn-primary" href="https://github.com/pjvilloud/ipi-java-220-ex" target="_blank"><i class="fa fa-icon fa-gamepad"></i></a>
+            &nbsp;
+            <a class="btn btn-primary" href="./java_220_cours.pdf" target="_blank"><i class="fa fa-icon fa-file-pdf-o"></i></a>
             &nbsp;
             <a class="btn btn-primary" href="mailto:pjvilloud@protonmail.com"><i class="fa fa-icon fa-envelope"></i></a>
             &nbsp;
@@ -1893,5 +1906,7 @@ List&lt;Client&gt; clients = commandes.stream()
 <script src="js/bootstrap.min.js"></script>
 <script src="js/highlight.min.js"></script>
 <script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/mark.min.js"></script>
+<script src="js/search.js"></script>
 <script src="js/script.js"></script>
 
