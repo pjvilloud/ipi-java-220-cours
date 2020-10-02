@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>IPI - Cours de Java - module 220</title>
-    
+
     <meta name="description" content="" />
     <meta name="author" content="Pierre-Julien VILLOUD" />
 
@@ -15,11 +15,11 @@
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     <link href="css/idea.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
-    
+
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
-    
+
 </head>
 
 <body class="impress-not-supported">
@@ -113,8 +113,8 @@
                   <button class="btn btn-primary" type="submit"><i class="fa fa-icon fa-search"></i></button>
                 </div>
               </div>
-              
-              
+
+
             </form>&nbsp;
             <a class="btn btn-primary" href="https://github.com/pjvilloud/ipi-java-220-ex" target="_blank"><i class="fa fa-icon fa-gamepad"></i></a>
             &nbsp;
@@ -153,7 +153,7 @@
             </p>
           </div>
         </div>
-        
+
     </div>
 
     <div id="introduction" class="step slide" data-nb="2" data-rel-x="0" data-y="1100">
@@ -209,11 +209,11 @@
                 <h1 class="display-4">La classe</h1>
                 <ul class="list-group">
                   <li class="list-group-item list-group-item-dark"><strong>Client</strong></li>
-                  <li class="list-group-item list-group-item-success" data-toggle="popover" data-trigger="hover" data-placement="left" data-html="true" data-content='<span class="text-success">Attribut</span>'>Nom</li>
-                  <li class="list-group-item list-group-item-success" data-toggle="popover" data-trigger="hover" data-placement="left" data-html="true" data-content='<span class="text-success">Attribut</span>'>Prénom</li>
-                  <li class="list-group-item list-group-item-success" data-toggle="popover" data-trigger="hover" data-placement="left" data-html="true" data-content='<span class="text-success">Attribut</span>'>Numéro</li>
-                  <li class="list-group-item list-group-item-info" data-toggle="popover" data-trigger="hover" data-placement="right" data-html="true" data-content='<span class="text-info">Méthode</span>'>Construire client</li>
-                  <li class="list-group-item list-group-item-info" data-toggle="popover" data-trigger="hover" data-placement="right" data-html="true" data-content='<span class="text-info">Méthode</span>'>Calcul réduction</li>
+                  <li class="list-group-item list-group-item-success" data-toggle="popover" data-trigger="hover" data-placement="left" data-html="true" data-content='<span class="text-success">Attribut</span>'><span>Nom</span></li>
+                  <li class="list-group-item list-group-item-success" data-toggle="popover" data-trigger="hover" data-placement="left" data-html="true" data-content='<span class="text-success">Attribut</span>'><span>Prénom</span></li>
+                  <li class="list-group-item list-group-item-success" data-toggle="popover" data-trigger="hover" data-placement="left" data-html="true" data-content='<span class="text-success">Attribut</span>'><span>Numéro</span></li>
+                  <li class="list-group-item list-group-item-info" data-toggle="popover" data-trigger="hover" data-placement="right" data-html="true" data-content='<span class="text-info">Méthode</span>'><span>Construire client</span></li>
+                  <li class="list-group-item list-group-item-info" data-toggle="popover" data-trigger="hover" data-placement="right" data-html="true" data-content='<span class="text-info">Méthode</span>'><span>Calcul réduction</span></li>
                 </ul>
               </div>
               <div class="col-lg-6 ml-auto">
@@ -242,7 +242,7 @@
               <i class="fa fa-icon fa-info-circle"></i>&nbsp;Les <em>attributs</em> représentent les données des objets.
             </div>
             <div class="alert alert-primary small-font" role="alert">
-                <i class="fa fa-icon fa-info-circle"></i>&nbsp;Les <em>méthodes</em> représentent les fonctions et traitements effectués sur les objets. 
+                <i class="fa fa-icon fa-info-circle"></i>&nbsp;Les <em>méthodes</em> représentent les fonctions et traitements effectués sur les objets.
             </div>
           </div>
         </div>
@@ -330,7 +330,7 @@
     //On ne fait rien
   } else if(typeForme == "Triangle") {
     rotationTriangle(forme);
-  } 
+  }
 }
 
 rotationCarre(forme) {...}
@@ -340,19 +340,19 @@ rotationCarre(forme) {...}
 
               </div>
               <div class="col-lg-6">
-                <pre><code class="java">class Forme {   
+                <pre><code class="java">class Forme {
   void rotation() {}
 }
 
-class Carre extends Forme {   
+class Carre extends Forme {
   void rotation(){ /* Rotation Carre*/ }
 }
 
-class Rond extends Forme {   
+class Rond extends Forme {
 }
 
-class Triangle extends Forme {   
-  <span data-toggle="popover" data-trigger="hover" data-placement="left" data-content="La classe <em>Triangle</em> est reponsable de sa méthode <code>rotation</code>" data-html="true">void rotation(){ /* Rotation Triangle*/ }
+class Triangle extends Forme {
+  <span data-toggle="popover" data-trigger="hover" data-placement="right" data-content="La classe <em>Triangle</em> est reponsable de sa méthode <code>rotation</code>" data-html="true">void rotation(){ /* Rotation Triangle*/ }</span>
 }
 </code></pre>
               </div>
@@ -411,14 +411,14 @@ String chaineVide = new String("");</span>
         </div>
       </div>
     </div>
-    
+
     <div id="standard" class="step slide" data-nb="8" data-x="0" data-y="2200">
       <div class="jumbotron jumbotron-fluid">
         <div class="container-fluid text-center">
           <h1 class="display-3">Les classes standard</h1>
           <div class="containe-fluid">
             <div class="alert alert-primary small-font" role="alert">
-                <i class="fa fa-icon fa-info-circle"></i>&nbsp;Java 8 propose nativement plus de 4000 classes permettant la construction d'interfaces graphiques, la manipulation de fichiers, les collections ou encore la sécurité, les bases de données... 
+                <i class="fa fa-icon fa-info-circle"></i>&nbsp;Java 8 propose nativement plus de 4000 classes permettant la construction d'interfaces graphiques, la manipulation de fichiers, les collections ou encore la sécurité, les bases de données...
             </div>
           </div>
           <div class="container">
@@ -438,7 +438,7 @@ String chaineVide = new String("");</span>
           <h1 class="display-3">La classe <code>String</code></h1>
           <div class="container">
             <div class="alert alert-primary small-font" role="alert">
-                <i class="fa fa-icon fa-info-circle"></i>&nbsp;Déjà vu dans <a href="">le cours précédent</a>, la classe standard <code>String</code> contient 4 attributs, 67 méthodes, 15 constructeurs, 3169 lignes...
+                <i class="fa fa-icon fa-info-circle"></i>&nbsp;Déjà vu dans <a href="https://pjvilloud.github.io/ipi-java-210-cours/#/chaines-classe" target="_blank">le cours précédent</a>, la classe standard <code>String</code> contient 4 attributs, 67 méthodes, 15 constructeurs, 3169 lignes...
             </div>
           </div>
         </div>
@@ -450,7 +450,7 @@ String chaineVide = new String("");</span>
           <h1 class="display-3">La classe <code>Math</code></h1>
           <div class="container-fluid">
             <div class="alert alert-primary small-font" role="alert">
-                <i class="fa fa-icon fa-info-circle"></i>&nbsp;La classe <code>Math</code> permet d'effectuer des opérations mathématiques avancées. 
+                <i class="fa fa-icon fa-info-circle"></i>&nbsp;La classe <code>Math</code> permet d'effectuer des opérations mathématiques avancées.
             </div>
             <table class="table table-striped small-font text-left big-top-margin">
               <thead>
@@ -530,7 +530,7 @@ Math.max(4,5);//5</code></pre></td>
                 </ul>
               </div>
             </div>
-            
+
           </div>
         </div>
       </div>
@@ -572,11 +572,11 @@ Integer monInteger2 = 127;
 
 <span data-toggle="popover" data-trigger="hover" data-placement="right" data-title="Vrai" data-content="Il n'y a pas Unboxing mais la JVM met en cache les <code>Integer</code> entre -127 et 127 pour des raisons de performances. Ainsi même en créant deux instances différentes avec la valeur 127, ce seront en fait deux références vers le même objet en cache..." data-html="true" data-template="<div class='popover' role='tooltip'><div class='arrow'></div><h3 class='popover-header text-success'></h3><div class='popover-body'></div></div>">monInteger == monInteger2;</span></code></pre>
               </div>
-              
+
 
             </div>
             </div>
-            
+
           </div>
         </div>
       </div>
@@ -586,11 +586,15 @@ Integer monInteger2 = 127;
       <div class="jumbotron jumbotron-fluid">
         <div class="container-fluid text-center">
           <h1 class="display-3">Les collections</h1>
-          <div class="container">
+          <div class="container-fluid">
             <div class="alert alert-primary small-font" role="alert">
                 <i class="fa fa-icon fa-info-circle"></i>&nbsp;Java propose un certain nombre de classes pour gérer des collections d'objet.
             </div>
+          </div>
+          <div class="container">
             <img src="img/collections.png" alt="">
+          </div>
+          <div class="container-fluid">
             <div class="little-top-margin alert alert-primary small-font" role="alert">
                 <i class="fa fa-icon fa-info-circle"></i>&nbsp;Pour savoir quelle collection choisir par rapport à vos besoins, c'est par <a target="_blank" href="http://files.zeroturnaround.com/pdf/zt_java_collections_cheat_sheet.pdf">ici</a>.
             </div>
@@ -733,7 +737,7 @@ mapNombres.size();//3
         </div>
       </div>
     </div>
-    
+
     <div id="creer" class="step slide" data-nb="17" data-x="0" data-y="3300">
       <div class="jumbotron jumbotron-fluid">
         <div class="container text-center">
@@ -906,23 +910,23 @@ data-html="true" data-template="<div class='popover large-popover' role='tooltip
 
   <span data-toggle="popover" data-trigger="hover" data-placement="right" data-html="true"
     data-content="Attribut <code>final</code> de type <code>Long</code>. Par défaut s'il n'est pas défini explicitement, il prendra la valeur <code>null</code>. Une fois initialisé à la construction de l'objet, il ne sera plus possible de le modifier." data-template="<div class='popover medium-popover' role='tooltip'><div class='arrow'></div><h3 class='popover-header'></h3><div class='popover-body'></div></div>">final Long numero;</span>
-  
+
   <span data-toggle="popover" data-trigger="hover" data-placement="right" data-html="true"
     data-content="Attribut de type <code>Client</code> qui est une classe <em>maison</em>">Client client;</span>
-  
+
   <span data-toggle="popover" data-trigger="hover" data-placement="right" data-html="true"
     data-content="Attribut de type <code>int</code> (type primitif). Par défaut s'il n'est pas défini explicitement, il prendra la valeur 0.">int priorite;</span>
-  
+
   <span data-toggle="popover" data-trigger="hover" data-placement="right" data-html="true"
     data-content="Agrégation : une commande <em>possède</em> une liste d'items.">HashMap&lt;Integer, Item&gt; items;</span>
-  
+
   <span data-toggle="popover" data-trigger="hover" data-placement="right" data-html="true"
     data-content="Attribut de type <code>Boolean</code> avec une valeur par défaut à <code>false</code>">Boolean estReglee = false;</span>
 
 }</code></pre>
               </div>
             </div>
-              
+
             <div class="alert alert-primary small-font" role="alert">
                 <i class="fa fa-icon fa-info-circle"></i>&nbsp;Les attributs sont typés et peuvent avoir une valeur par défaut (qui sera affectée à chaque instance).
             </div>
@@ -955,14 +959,14 @@ data-html="true" data-template="<div class='popover large-popover' role='tooltip
     //Livraison plus rapide en fonction de la priorité
     return priorite == 1 ? 3 : 5;
   }</span>
-    
+
   <span data-toggle="popover" data-trigger="hover" data-placement="right" data-html="true"
     data-content="Méthode qui permet de régler tout ou partie d'une commande prenant en paramètre le montant réglé. La méthode <code>metAJourSolde</code> est implémentée dans la classe <code>Client</code>">void reglerCommande(Double montant) {
     //Réglement de la commande
     this.montantRegle -= montant;
     this.client.metAJourSolde(montant);
   }</span>
-  
+
   <span data-toggle="popover" data-trigger="hover" data-placement="right" data-html="true"
     data-content="Méthode qui permet d'ajouter une nouvelle commande à la map de commandes.">void ajouterItem(Item item) {
     //Ajout d'une item dans la map
@@ -971,7 +975,7 @@ data-html="true" data-template="<div class='popover large-popover' role='tooltip
 }</code></pre>
               </div>
             </div>
-              
+
             <div class="alert alert-primary small-font" role="alert">
                 <i class="fa fa-icon fa-info-circle"></i>&nbsp;Elles ont un type de retour et potentiellement des paramètres d'entrée (en dehors des attributs de la classe). Pour manipuler les attributs de la classe, on peut les préfixer par <code>this</code> pour éviter de les mélanger avec des paramètres d'entrée.
             </div>
@@ -1014,7 +1018,7 @@ data-html="true" data-template="<div class='popover large-popover' role='tooltip
     data-content="Appel du deuxième constructeur. Les attributs <code>numero</code> et <code>client</code> sont initialisés avec les valeurs passées en paramètres. La variable <code>c</code> est une <em>référence</em> vers l'espace mémoire contenant l'objet effectif." data-template="<div class='popover large-popover' role='tooltip'><div class='arrow'></div><h3 class='popover-header'></h3><div class='popover-body'></div></div>">c = new Commande(12345L, new Client());</span></code></pre>
             </div>
             </div>
-            
+
           </div>
           <div class="container-fluid">
             <div class="alert alert-primary small-font" role="alert">
@@ -1033,7 +1037,7 @@ data-html="true" data-template="<div class='popover large-popover' role='tooltip
             <div class="alert alert-primary small-font" role="alert">
                 <i class="fa fa-icon fa-info-circle"></i>&nbsp;La notion de <strong>visibilité</strong> est au cœur de la POO. Elle est la base du principe d'<em>encapsulation</em> et d'<em>interface</em>. En Java, il existe quatre <em>modificateurs de visibilité</em> permettant de définir la visibilité des méthodes et attributs au sein d'une classe. Ils sont spécifiés avant la déclaration des attributs ou des méthodes.
             </div>
-            <table class="table table-striped small-font text-left">
+            <table class="table table-striped small-font text-left big-top-margin">
               <thead>
                 <tr>
                   <th>Modificateur</th>
@@ -1064,7 +1068,7 @@ data-html="true" data-template="<div class='popover large-popover' role='tooltip
                 </tr>
               </tbody>
             </table>
-            <div class="alert alert-primary small-font" role="alert">
+            <div class="alert alert-primary small-font big-top-margin" role="alert">
                 <i class="fa fa-icon fa-info-circle"></i>&nbsp;De manière générale, il est recommandé de restreindre autant que possible l'accès aux attributs et méthodes.
             </div>
           </div>
@@ -1088,7 +1092,7 @@ data-html="true" data-template="<div class='popover large-popover' role='tooltip
   <span data-toggle="popover" data-trigger="hover" data-offset="15px" data-placement="right" data-html="true"
     data-content="Les attributs sont privés et ne sont accessibles en lecture que par leur <em>getters</em>, et en écriture que par leur <em>setters</em>.">private String nom;
   private Date dateCourante;</span>
-  
+
   <span data-toggle="popover" data-trigger="hover" data-placement="right" data-html="true"
     data-content="Sauf cas particuliers, un constructeur doit être <code>public</code> pour qu'il soit possible de créer des instances.">public Bonjour(String nom){
     this.nom = nom;
@@ -1137,12 +1141,12 @@ data-html="true" data-template="<div class='popover large-popover' role='tooltip
     this.adresseFacturation = adresseFacturation;
   }</span>
   <span  data-toggle="popover" data-trigger="hover" data-placement="right" data-html="true"
-    data-content="Lorsqu'on va appeler <code>c.calculMontantCommande(100)</code> cela va renvoyer 100 * 1.2 = 120. Cette méthode est <code>final</code>, ce qui signifie qu'elle ne pourra pas être redéfinie dans d'éventuelles sous-classes." data-template="<div class='popover large-popover' role='tooltip'><div class='arrow'></div><h3 class='popover-header'></h3><div class='popover-body'></div></div>">public final double calculMontant(double montantHT){ 
+    data-content="Lorsqu'on va appeler <code>c.calculMontantCommande(100)</code> cela va renvoyer 100 * 1.2 = 120. Cette méthode est <code>final</code>, ce qui signifie qu'elle ne pourra pas être redéfinie dans d'éventuelles sous-classes." data-template="<div class='popover large-popover' role='tooltip'><div class='arrow'></div><h3 class='popover-header'></h3><div class='popover-body'></div></div>">public final double calculMontant(double montantHT){
     return montantHT * tauxTva();
   }</span>
   <span  data-toggle="popover" data-trigger="hover" data-placement="right" data-html="true"
-    data-content="Lorsqu'on va appeler <code>c.tauxTva()</code> cela va renvoyer 1.2" data-template="<div class='popover large-popover' role='tooltip'><div class='arrow'></div><h3 class='popover-header'></h3><div class='popover-body'></div></div>">protected double tauxTva(){ 
-    return 1.2;//Par défaut on paye avec 20% de TVA 
+    data-content="Lorsqu'on va appeler <code>c.tauxTva()</code> cela va renvoyer 1.2" data-template="<div class='popover large-popover' role='tooltip'><div class='arrow'></div><h3 class='popover-header'></h3><div class='popover-body'></div></div>">protected double tauxTva(){
+    return 1.2;//Par défaut on paye avec 20% de TVA
   }</span>
 }
 
@@ -1157,7 +1161,7 @@ public class Professionnel extends Client {
     this.raisonSociale = raisonSociale; this.siret = siret;
   }</span>
   <span data-toggle="popover" data-trigger="hover" data-offset="15px" data-placement="right" data-html="true"
-    data-content="La méthode <code>calculMontant</code> est héritée, la méthode <code>tauxTva</code> est redéfinie. Lorsqu'on va appeler <code>p.calculMontantCommande(100)</code> cela va renvoyer 100 * 1.0 = 100">protected double tauxTva(){ 
+    data-content="La méthode <code>calculMontant</code> est héritée, la méthode <code>tauxTva</code> est redéfinie. Lorsqu'on va appeler <code>p.calculMontantCommande(100)</code> cela va renvoyer 100 * 1.0 = 100">protected double tauxTva(){
     return 1.0;//Les pros payent en HT
   }</span>
 }</code></pre>
@@ -1182,7 +1186,7 @@ public class Professionnel extends Client {
           <div class="row align-items-center">
               <div class="col-lg-4 row">
                 <div class="col-lg-6">
-                  
+
                 </div>
                 <div class="col-lg-6">
                   <ul class="list-group col small-font">
@@ -1193,7 +1197,7 @@ public class Professionnel extends Client {
           data-content="La méthode <code>hashCode</code> a pour but de donner une signature unique à un objet en fonction de la valeur de ses attributs sous forme d'entier. Si la méthode <code>equals</code> est redéfinie, et qu'on veut pouvoir stocker des isntances dans une <code>HashMap</code>, cette méthode doit être également redéfinie"><li class="list-group-item"><br>hashCode <br><br></li></span>
                     <span  data-toggle="popover" data-offset="70px" data-trigger="hover" data-placement="left" data-html="true"
           data-content="La méthode <code>toString</code> est intéressante pour retourner un équivalent textuel d'un objet, pour des besoins de journalisation par exemple, ou même des besoins métiers. La méthode par défaut renvoie <code>NomClasse@hashcode(hex)</code>"><li class="list-group-item"><br>toString <br><br></li></span>
-                    
+
                     <li class="list-group-item">...</li>
                   </ul>
                 </div>
@@ -1276,7 +1280,7 @@ p = new Client();//Erreur de compilation</code></pre></div>
                 <i class="fa fa-icon fa-info-circle"></i>&nbsp;Il est possible de stocker des collections d'objets du type d'une superclasse est d'y stocker des objets de la superclasse et de n'importe quelle sous-classe.
             </div>
           </div>
-          <div class="container"><pre><code class="java small-font text-left">Client c = new Client(); 
+          <div class="container"><pre><code class="java small-font text-left">Client c = new Client();
 Professionnel p = new Professionnel();
 Client[] clients = new Client[2];
 Professionnel[] pros = new Professionnel[1];
@@ -1303,7 +1307,7 @@ objects.get(1).tauxTva()//Erreur de compilation</span>
 ((Professionnel)objects.get(1)).tauxTva(); //OK
 ((Professionnel)objects.get(0)).tauxTva(); //Erreur à l'exécution</span></code></pre></div>
         </div>
-        
+
       </div>
     </div>
 
@@ -1313,7 +1317,7 @@ objects.get(1).tauxTva()//Erreur de compilation</span>
           <h1 class="display-3">Surcharge et redéfinition</h1>
           <div class="container-fluid">
             <div class="alert alert-primary small-font " role="alert">
-                <i class="fa fa-icon fa-info-circle"></i>&nbsp;La <strong>surcharge</strong> permet de définir plusieurs méthodes avec le même nom, mais dont la <em>signature</em> (paramètres et/ou type de retour) est différente.  <br> 
+                <i class="fa fa-icon fa-info-circle"></i>&nbsp;La <strong>surcharge</strong> permet de définir plusieurs méthodes avec le même nom, mais dont la <em>signature</em> (paramètres et/ou type de retour) est différente.  <br>
                 <i class="fa fa-icon fa-info-circle"></i>&nbsp;La <strong>redéfinition</strong> est le fait de changer le code d'une méthode issue de la superclasse.
             </div>
             <div class="container small-font text-left"><pre><code class="java">public class Client {
@@ -1344,7 +1348,7 @@ objects.get(1).tauxTva()//Erreur de compilation</span>
           <h1 class="display-3">Classes abstraites</h1>
           <div class="container-fluid">
             <div class="alert alert-primary small-font " role="alert">
-                <i class="fa fa-icon fa-info-circle"></i>&nbsp;Il arrive que les superclasses deviennent de plus en plus abstraites et servent de <em>moule</em> pour les sous-classes permettant de mettre en commun des attributs et des méthodes. 
+                <i class="fa fa-icon fa-info-circle"></i>&nbsp;Il arrive que les superclasses deviennent de plus en plus abstraites et servent de <em>moule</em> pour les sous-classes permettant de mettre en commun des attributs et des méthodes.
             </div>
           </div>
           <div class="container-fluid">
@@ -1355,7 +1359,7 @@ objects.get(1).tauxTva()//Erreur de compilation</span>
   public Client(long numero) {
     this.numero = numero;
   }
-  public double calculMontant(double montantHT){ 
+  public double calculMontant(double montantHT){
     return montantHT * tauxTva();
   }
   public abstract double tauxTva();
@@ -1367,9 +1371,9 @@ objects.get(1).tauxTva()//Erreur de compilation</span>
   private String raisonSociale;
   public Professionnel(long numero, String raisonSociale) {
     super(numero);
-    this.raisonSociale = raisonSociale; 
+    this.raisonSociale = raisonSociale;
   }
-  public double tauxTva(){ 
+  public double tauxTva(){
     return 1.0;//Les pros payent en HT
   }
 }</span>
@@ -1382,10 +1386,10 @@ public class Particulier extends Client {
   private String nom;
   public Particulier(long numero, String nom) {
     super(numero);
-    this.nom = nom; 
+    this.nom = nom;
   }
   <span data-toggle="popover" data-trigger="hover" data-offset="15px" data-placement="right" data-html="true"
-    data-content="Chaque sous-classe doit implémenter la méthode <code>tauxTva</code>">public double tauxTva(){ 
+    data-content="Chaque sous-classe doit implémenter la méthode <code>tauxTva</code>">public double tauxTva(){
     return 1.2;//Les particuliers payent en TTC
   }</span>
 }</code></pre>
@@ -1569,7 +1573,7 @@ p3.setPremier(false);//Warning</span>
             <div class="alert alert-primary small-font " role="alert">
                 <i class="fa fa-icon fa-info-circle"></i>&nbsp;Lorsqu'un classe abstraite ne possède aucun attribut (en dehors de constantes) et aucune méthode non statique, on peut la remplacer par une <strong>interface</strong>.
             </div>
-            
+
           </div>
           <div class="container small-font text-left">
             <pre><code class="java"><span data-toggle="popover" data-offset="0" data-trigger="hover click" data-placement="left" data-html="true"
@@ -1597,7 +1601,7 @@ Client client2 = new Client();//Erreur de compilation</code></pre>
                 <i class="fa fa-icon fa-info-circle"></i>&nbsp;Une classe peut implémenter <strong>plusieurs interfaces</strong>. <br>
                 <i class="fa fa-icon fa-info-circle"></i>&nbsp;Une <strong>interface</strong> peut <em>hériter</em> d'une autre <strong>interface</strong>.
             </div>
-            
+
           </div>
         </div>
       </div>
@@ -1666,7 +1670,7 @@ clients[2] = new Particulier(5500.0);//Client 3
             </div>
             <div class="col-lg-6">
             <button id="toggleClassIntern" class="pull-right btn btn-primary"><i class="fa fa-icon fa-times-circle"></i></button>
-            
+
             <pre><code class="java">public class Commande {
     <span data-toggle="popover" data-offset="0" data-trigger="hover click" data-placement="right" data-html="true" data-content="On peut déclarer un attribut utilisant le type de la classe interne <code>Item</code>">private List&lt;Item&gt; items;</span>
   private double tva = 1.2;
@@ -1753,11 +1757,11 @@ new Item("Produit", 5, 12.0).afficheItem();
   public Particulier(double solde) { this.solde = solde; }
 
   <span data-toggle="popover" data-offset="0" data-trigger="hover click" data-placement="right" data-html="true" data-content="Le constructeur par défaut de <code>Comparator</code> est utilisé et l'utilisation des <code>{ }</code> permet de redéfinir directement la méthode <code>compare</code> de <code>Comparator</code>. A noter le <code>;</code> obligatoire après l'appel à <code>new</code>.">public int compareTo(Client o) {
-    Comparator&lt;Particulier&gt; comparator = new Comparator&lt;Particulier&gt;() {  
-      public int compare(Particulier p1, Particulier p2) {  
-        return p1.solde.compareTo(p2.solde) ;  
-      }                 
-    };  
+    Comparator&lt;Particulier&gt; comparator = new Comparator&lt;Particulier&gt;() {
+      public int compare(Particulier p1, Particulier p2) {
+        return p1.solde.compareTo(p2.solde) ;
+      }
+    };
     return comparator.compare(this, o) ;
   }</span>
 }</code></pre>
@@ -1781,11 +1785,11 @@ new Item("Produit", 5, 12.0).afficheItem();
             </div>
           </div>
           <div class="container-fluid small-font text-left">
-            <pre><code class="java">Comparator&lt;Particulier&gt; comparator = new Comparator&lt;Particulier&gt;() {  
-  public int compare(Particulier p1, Particulier p2) {  
-    return p1.getSolde().compareTo(p2.getSolde()) ;  
-  }                 
-}; 
+            <pre><code class="java">Comparator&lt;Particulier&gt; comparator = new Comparator&lt;Particulier&gt;() {
+  public int compare(Particulier p1, Particulier p2) {
+    return p1.getSolde().compareTo(p2.getSolde()) ;
+  }
+};
 
 Comparator&lt;Particulier&gt; comparator = (Particulier p1, Particulier p2) -&gt; o1.getSolde().compareTo(o2.getSolde());
 
@@ -1816,7 +1820,7 @@ Comparator&lt;Particulier&gt; comparator = (Particulier p1, Particulier p2) -&gt
           </div>
           <div class="container-fluid small-font text-left row">
             <pre class="col-lg-6"><code class="java">public class Particulier {
-  private Long numero; 
+  private Long numero;
   private Double solde;
   public static int compareSolde(Particulier a, Particulier b) {
     return a.solde.compareTo(b.solde);
@@ -1842,7 +1846,7 @@ ComparaisonClient comp = new ComparaisonClient();
 <span data-toggle="popover" data-offset="0" data-trigger="hover click" data-placement="left" data-html="true" data-content="
     La référence de la méthode <code>compareSolde</code> de l'instance <code>comp</code> de la classe <code>ComparaisonClient</code> est utilisée pour chaque élément du tableau <code>clients</code>." data-template="<div class='popover medium-popover' role='tooltip'><div class='arrow'></div><h3 class='popover-header'></h3><div class='popover-body'></div></div>">Arrays.sort(clients, comp::compareSolde);</span>
 
-//Référence de la méthode d'instance compareToIgnoreCase 
+//Référence de la méthode d'instance compareToIgnoreCase
 //d'un objet spécifique du type particulier String
 String[] myArray = {"one", "two", "three", "four"};
 <span data-toggle="popover" data-offset="18px" data-trigger="hover click" data-placement="left" data-html="true" data-content="
@@ -1909,4 +1913,3 @@ List&lt;Client&gt; clients = commandes.stream()
 <script src="js/mark.min.js"></script>
 <script src="js/search.js"></script>
 <script src="js/script.js"></script>
-
